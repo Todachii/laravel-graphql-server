@@ -4,7 +4,5 @@ type Account {
     name: String
     email: String
     avatar: String
-    follower: Follower
-    followers: [Follower]
     is_following_account: Boolean
 }

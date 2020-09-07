@@ -10,6 +10,9 @@ class Tweet extends Model
     use SoftDeletes;
     protected $guarded = [];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function account()
     {
         return $this->belongsTo(Account::class);
